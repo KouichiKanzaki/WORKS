@@ -1,0 +1,729 @@
+@charset "utf-8";
+/*----------------------　ポートフォリオ(共通)　----------------------*/
+html, body {
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	background-color: white;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 16vw;
+	height: 100%;
+	background: linear-gradient(to left, royalblue, lightblue);
+	color: #fff;
+	box-shadow: 2px 0 3px rgba(0,0,0,.2);
+	padding-left: 3vw;
+}
+.title {
+	padding-top: 3vw;
+	padding-bottom: 1vw;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 22px;
+}
+header ul {
+	margin-top: 2vw;
+}
+header ul li {
+	padding-bottom: 0.8vw;
+}
+header ul li a {
+	position: relative;
+	font-size: 15px;
+	color: #fff;
+	line-height: 1.8;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+#width_type {
+	position: relative;
+	font-size: 15px;
+	color: #fff;
+	line-height: 1.8;
+	letter-spacing: 2.5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.pagebox h2 {
+	font-size: 25px;
+	margin-bottom: 5vw;
+	color: mediumblue;
+}
+.pagebox {
+	width: 70vw;
+	height: auto;
+	margin-left: 23vw;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	.pagebox {
+		width: 60vw;
+		height: auto;
+		margin-left: 33vw;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 20vw;
+		height: 100%;
+		padding-left: 3vw;
+	}
+	.title {
+		padding-top: 1vw;
+		padding-bottom: 0.5vw;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 15px;
+		font-weight: bold;
+	}
+	header ul {
+		margin-top: 0.8vw;
+	}
+	header ul li {
+		padding-bottom: 0.8vw;
+	}
+	header ul li a {
+		font-weight: normal;
+		position: relative;
+		font-size: 13px;
+		color: #fff;
+		line-height: 1;
+		letter-spacing: 2.5px;
+		text-decoration: none;
+	}
+	#width_type {
+		position: relative;
+		font-size: 13px;
+		color: #fff;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	.pagebox h2 {
+		font-size: 20px;
+		margin-bottom: 5vw;
+		color: mediumblue;
+	}
+	.pagebox {
+		width: 50vw;
+		height: auto;
+		margin-left: 33vw;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		padding-left: 3vw;
+	}
+	.title {
+		padding-top: 2vw;
+		padding-bottom: 1vw;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 17px;
+		font-weight: bold;
+	}
+	header ul {
+		margin-top: 0.8vw;
+	}
+	header ul li {
+		padding-bottom: 0.8vw;
+		display: inline-block;
+	}
+	header ul li a {
+		font-weight: normal;
+		position: relative;
+		font-size: 11px;
+		color: #fff;
+		line-height: 1;
+		letter-spacing: 2.5px;
+		text-decoration: none;
+	}
+	#width_type {
+		position: relative;
+		font-size: 11px;
+		color: #fff;
+		letter-spacing: 2.5px;
+		font-weight: normal;
+		text-decoration: none;
+	}
+	.pagebox h2 {
+		font-size: 20px;
+		margin-bottom: 5vw;
+		color: mediumblue;
+	}
+	.pagebox {
+		width: 80vw;
+		height: auto;
+		margin-left: 5vw;
+		padding-top: 45vw;
+		padding-bottom: 5vw;
+	}
+}
+/*----------------------　works　----------------------*/
+#works .works-left {
+	display: inline-block;
+	width: 50%;
+	padding-right: 0;
+}
+#works .works-right {
+	display: inline-block;
+	width: 46%;
+	vertical-align: top;
+	padding: 2vw;
+	padding-right: 0;
+}
+#works img {
+	width: 100%;
+	height: 100%;
+	transition: all .3s;
+}
+#works table {
+	width: 100%;
+	height: 100%;
+}
+#works table tr th {
+	width: 10vw;
+	padding: 1vw 0;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#works .works-left {
+		display: block;
+		width: 75%;
+		padding-right: 0;
+	}
+	#works .works-right {
+		display: block;
+		width: 75%;
+		vertical-align: top;
+		padding: 2vw;
+		padding-right: 0;
+	}
+	#works table tr th {
+		width: 13vw;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#works .works-left {
+		display: block;
+		width: 100%;
+		padding-right: 0;
+	}
+	#works .works-right {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+		padding: 2vw;
+		padding-right: 0;
+	}
+	#works table tr th {
+		font-size: 13px;
+		width: 20vw;
+	}
+	#works table tr td {
+		font-size: 13px;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#works .works-left {
+		display: block;
+		width: 100%;
+		padding-right: 0;
+	}
+	#works .works-right {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+		padding: 2vw;
+		padding-right: 0;
+	}
+	#works table tr th {
+		font-size: 12px;
+		width: 24vw;
+	}
+	#works table tr td {
+		font-size: 12px;
+	}
+}
+/*----------------------　profile　----------------------*/
+#profile #skill-tool {
+	display: inline-block;
+}
+#profile #skill-language {
+	display: inline-block;
+}
+#profile #skill-tool img {
+	width: 30vw;
+	height: 100%;
+}
+#profile #skill-language img {
+	width: 30vw;
+	height: 100%;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#profile #skill-tool {
+		display: block;
+	}
+	#profile #skill-language {
+		display: block;
+	}
+	#profile #skill-tool img {
+		width: 40vw;
+		height: 100%;
+	}
+	#profile #skill-language img {
+		width: 40vw;
+		height: 100%;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#profile #skill-tool {
+		display: block;
+	}
+	#profile #skill-language {
+		display: block;
+	}
+	#profile #skill-tool img {
+		width: 60vw;
+		height: 100%;
+	}
+	#profile #skill-language img {
+		width: 60vw;
+		height: 100%;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#profile #skill-tool {
+		display: block;
+	}
+	#profile #skill-language {
+		display: block;
+	}
+	#profile #skill-tool img {
+		width: 80vw;
+		height: 100%;
+	}
+	#profile #skill-language img {
+		width: 80vw;
+		height: 100%;
+	}
+}
+/*----------------------　app　----------------------*/
+#calendar {
+	display: inline-block;
+	width: 46%;
+	margin: 0;
+}
+#draw_app {
+	display: inline-block;
+	width: 51%;
+	vertical-align: top;
+}
+/* calendar */
+#calendar a {
+	text-decoration: none;
+	color: red;
+}
+#calendar table {
+	margin: 0 auto 30px;
+	border: 1px solid #ddd;
+	border-collapse: collapse;
+}
+#calendar th {
+	padding: 15px;
+	text-align: center;
+	background: blanchedalmond;
+}
+#calendar td {
+	padding: 15px;
+	text-align: center;
+	background: ghostwhite;
+}
+#calendar .youbi_0 {
+	color: red;
+}
+#calendar .youbi_6 {
+	color: blue;
+}
+#calendar .today {
+	font-weight: bold;
+	background: orange;
+}
+#calendar .gray {
+	color: #dedede;
+}
+/* draw_app */
+#draw_app_title {
+	font-weight: bold;
+	color: #000;
+}
+#penColor {
+	margin: 1px;
+	margin-right: 0px;
+	width: 50px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#penWidth {
+	margin: 1px;
+	margin-right: 0px;
+	width: 50px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 15px;
+}
+#erase {
+	margin: 1px;
+	margin-right: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	width: 50px;
+	height: 30px;
+}
+#save {
+	margin: 1px;
+	margin-right: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	height: 30px;
+}
+#delete {
+	margin: 1px;
+	margin-right: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	height: 30px;
+}
+#mycanvas_draw_app {
+	border: 10px solid lightgrey;
+	cursor: crosshair;
+}
+.thumbnail {
+	border: 2px solid lightgrey;
+	margin-right: 0px;
+	margin: 3px;
+	width: 100px;
+	height: 50px;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#calendar {
+		display: block;
+		width: 46%;
+		margin: 0;
+	}
+	#draw_app {
+		display: block;
+		width: 51%;
+		vertical-align: top;
+	}
+	.thumbnail {
+		border: 2px solid lightgrey;
+		margin-right: 0px;
+		margin: 2px;
+		width: 90px;
+		height: 50px;
+	}
+	#gallery {
+		width: 400px;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#calendar {
+		display: block;
+		width: 46%;
+		margin: 0;
+	}
+	#draw_app {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+	}
+	/* calendar */
+	#calendar a {
+		text-decoration: none;
+		color: red;
+	}
+	#calendar table {
+		margin: 0 auto 30px;
+		border: 1px solid #ddd;
+		border-collapse: collapse;
+	}
+	#calendar th {
+		padding: 10px;
+		text-align: center;
+		background: blanchedalmond;
+	}
+	#calendar td {
+		padding: 10px;
+		text-align: center;
+		background: ghostwhite;
+	}
+	/* draw_app */
+	#penColor {
+		margin: 1px;
+		margin-right: 0px;
+		width: 50px;
+		height: 30px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	#penWidth {
+		margin: 1px;
+		margin-right: 0px;
+		width: 50px;
+		height: 30px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	#erase {
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		width: 55px;
+		height: 30px;
+	}
+	#save {
+		display: block;
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		height: 30px;
+	}
+	#delete {
+		display: block;
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		height: 30px;
+	}
+	#mycanvas_draw_app {
+		border: 10px solid lightgrey;
+		cursor: crosshair;
+	}
+	.thumbnail {
+		border: 2px solid lightgrey;
+		margin-right: 0px;
+		margin: 3px;
+		width: 55px;
+		height: 40px;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#calendar {
+		display: block;
+		width: 46%;
+		margin: 0;
+	}
+	#draw_app {
+		display: block;
+		width: 100%;
+		vertical-align: top;
+	}
+	/* calendar */
+	#calendar a {
+		text-decoration: none;
+		color: red;
+	}
+	#calendar table {
+		margin: 0 auto 30px;
+		border: 1px solid #ddd;
+		border-collapse: collapse;
+	}
+	#calendar th {
+		padding: 10px;
+		text-align: center;
+		background: blanchedalmond;
+	}
+	#calendar td {
+		padding: 10px;
+		text-align: center;
+		background: ghostwhite;
+	}
+	/* draw_app */
+	#penColor {
+		margin: 1px;
+		margin-right: 0px;
+		width: 50px;
+		height: 30px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	#penWidth {
+		margin: 1px;
+		margin-right: 0px;
+		width: 50px;
+		height: 30px;
+		font-weight: bold;
+		font-size: 15px;
+	}
+	#erase {
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		width: 55px;
+		height: 30px;
+	}
+	#save {
+		display: block;
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		height: 30px;
+	}
+	#delete {
+		display: block;
+		margin: 1px;
+		margin-right: 0px;
+		font-weight: bold;
+		font-size: 14px;
+		height: 30px;
+	}
+	#mycanvas_draw_app {
+		border: 10px solid lightgrey;
+		cursor: crosshair;
+	}
+	.thumbnail {
+		border: 2px solid lightgrey;
+		margin-right: 0px;
+		margin: 3px;
+		width: 50px;
+		height: 40px;
+	}
+}
+/*----------------------　animation　----------------------*/
+#animation canvas {
+	background-color: lightgrey;
+}
+#animation #start {
+	margin: 10px;
+	margin-right: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	height: 30px;
+}
+#animation #various_color {
+	margin: 10px;
+	margin-right: 0px;
+	font-weight: bold;
+	font-size: 15px;
+	height: 30px;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	/* JSで変更 */
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	/* JSで変更 */
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+
+}
+/*----------------------　contact　----------------------*/
+#contact {
+	height: 780px;
+}
+#contact p {
+	padding-left: 30px;
+	padding-bottom: 10px;
+}
+#contact img {
+	display: inline-block;
+}
+#contact a {
+	display: inline-block;
+	padding: 10px;
+	padding-left: 20px;
+	vertical-align: top;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#contact {
+		height: 850px;
+	}
+	#contact p {
+		padding-left: 20px;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#contact {
+		height: 900px;
+	}
+	#contact p {
+		padding-left: 15px;
+		padding-bottom: 10px;
+		font-size: 13px;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+
+}
+/*----------------------　footer　----------------------*/
+footer {
+	position: fixed;
+	width: 16vw;
+	bottom: 2vw;
+	left: 3vw;
+	color: #fff;
+	font-size: 10px;
+	line-height: 1.8;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	footer {
+		position: fixed;
+		width: 20vw;
+		top: 210px;
+		left: 3vw;
+		color: #fff;
+		font-size: 8px;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	footer {
+		display: none;
+	}
+}
+}
