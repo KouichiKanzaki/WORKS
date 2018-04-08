@@ -30,16 +30,19 @@ header div ul li a {
 #firstWorks{
 	padding: 200px 50px 0; 
 }
-/*----------------------　works　----------------------*/
 .pagebox {
 	text-align:center;
+	height: auto;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
 }
-#works h2 {
+.pagebox h2 {
 	padding: 2vw;
 	font-size: 25px;
 }
+/*----------------------　works　----------------------*/
 #works {
-	padding-top: 200px;
+	padding-top: 180px;
 }
 #works .works-left {
 	display: inline-block;
@@ -79,7 +82,10 @@ header div ul li a {
 		padding: 0 15vw 0;
 	}
 	#works table tr th {
-		width: 13vw;
+		font-size: 15px;
+	}
+	#works table tr td {
+		font-size: 15px;
 	}
 }
 /* ######################### 520px以上～819px以下（スマートフォン横）######################### */
@@ -97,7 +103,6 @@ header div ul li a {
 	}
 	#works table tr th {
 		font-size: 13px;
-		width: 20vw;
 	}
 	#works table tr td {
 		font-size: 13px;
@@ -119,9 +124,235 @@ header div ul li a {
 	}
 	#works table tr th {
 		font-size: 12px;
-		width: 24vw;
 	}
 	#works table tr td {
 		font-size: 12px;
+	}
+}
+/*----------------------　request　----------------------*/
+#requestContents {
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+}
+#requestContents h1 {
+	font-size: 25px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+#imageColor {
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+}
+#imageColor h1 {
+	font-size: 25px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+.img-sen {
+	font-size: 14px;
+	height: 70px;
+}
+#img-color1 {
+	width: 4vw;
+	height: 4vw;
+	background-color: #c7b370;
+	float: left;
+}
+#img-color2 {
+	width: 4vw;
+	height: 4vw;
+	background-color: #00ff7f;
+	float: left;
+}
+#img-color3 {
+	width: 4vw;
+	height: 4vw;
+	background-color: #f3f3f3;
+	float: left;
+}
+
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#requestContents {
+		width: 60%;
+	}
+	#imageColor {
+		width: 60%;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#requestContents {
+		width: 50%;
+	}
+	#requestContents p {
+		font-size: 14px
+	}
+	#imageColor {
+		width: 50%;
+	}
+	#requestContents h1 {
+		font-size: 18px;
+	}
+	#imageColor h1 {
+		font-size: 18px;
+
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#requestContents {
+		width: 70%;
+	}
+	#requestContents p {
+		font-size: 14px
+	}
+	#imageColor {
+		width: 70%;
+	}
+	#img-color1 {
+		width: 10vw;
+		height: 10vw;
+	}
+	#img-color2 {
+		width: 10vw;
+		height: 10vw;
+	}
+	#img-color3 {
+		width: 10vw;
+		height: 10vw;
+	}
+	.img-sen {
+		font-size: 14px;
+		height: 100px;
+	}
+}
+/*----------------------　profile　----------------------*/
+#skill #skill-tool {
+	display: inline-block;
+}
+#skill #skill-language {
+	display: inline-block;
+}
+#skill #skill-tool img {
+	width: 30vw;
+	height: 100%;
+}
+#skill #skill-language img {
+	width: 30vw;
+	height: 100%;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#skill #skill-tool {
+		display: block;
+	}
+	#skill #skill-language {
+		display: block;
+	}
+	#skill #skill-tool img {
+		width: 40vw;
+		height: 100%;
+	}
+	#skill #skill-language img {
+		width: 40vw;
+		height: 100%;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#skill #skill-tool {
+		display: block;
+	}
+	#skill #skill-language {
+		display: block;
+	}
+	#skill #skill-tool img {
+		width: 60vw;
+		height: 100%;
+	}
+	#skill #skill-language img {
+		width: 60vw;
+		height: 100%;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#skill #skill-tool {
+		display: block;
+	}
+	#skill #skill-language {
+		display: block;
+	}
+	#skill #skill-tool img {
+		width: 80vw;
+		height: 100%;
+	}
+	#skill #skill-language img {
+		width: 80vw;
+		height: 100%;
+	}
+}
+/*----------------------　contact　----------------------*/
+#contact {
+	height: 780px;
+}
+#contact div {
+	text-align: left;
+	display: inline-block;
+	width: 50%;
+}
+#contact p {
+	padding-left: 30px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+#contact img {
+	display: inline-block;
+}
+#contact a {
+	display: inline-block;
+	padding: 10px;
+	padding-left: 20px;
+	vertical-align: top;
+}
+/* ######################### 820px以上～1250px以下 ######################### */
+@media (min-width: 820px) and (max-width: 1250px) {
+	#contact {
+		height: 600px;
+	}
+	#contact p {
+		padding-left: 20px;
+		padding-bottom: 10px;
+		font-size: 15px;
+	}
+}
+/* ######################### 520px以上～819px以下（スマートフォン横）######################### */
+@media (min-width: 520px) and (max-width: 819px) {
+	#contact {
+		height: 550px;
+	}
+	#contact p {
+		padding-left: 5px;
+		padding-bottom: 10px;
+		font-size: 18px;
+	}
+}
+/* ######################### 519px以下（スマートフォン縦）######################### */
+@media (max-width: 519px) {
+	#contact {
+		height: 530px;
+	}
+	#contact p {
+		padding-left: 5px;
+		padding-bottom: 10px;
+		font-size: 14px;
+	}
+	#contact p a {
+		font-size: 14px;
+		padding: 0;
+		margin: 0;
 	}
 }
