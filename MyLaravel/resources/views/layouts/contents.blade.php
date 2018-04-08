@@ -21,6 +21,6 @@
 	@yield('contact')
 	</div>
 </div>
-</body>l
+</body>
 	@yield('javascript')
 </html>
