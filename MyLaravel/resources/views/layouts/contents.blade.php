@@ -23,4 +23,4 @@
 </div>
 </body>
 	@yield('javascript')
-</html>a
+</html>
