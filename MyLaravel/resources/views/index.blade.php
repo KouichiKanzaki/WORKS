@@ -13,7 +13,7 @@
 
 @section('javascript')
 <script src="../js/jquery.min.js"></script>
-<script src="../js/popper.min.js"></script>
+<script src="../js/popper.js"></script>
 <script src="../js/bootstrap.min.js"></script>
 <script src="../js/script.js"></script>
 @endsection
@@ -24,33 +24,46 @@
     <div class="col-sm-12 text-center siteTitle">
         <h4>Kanzaki Kouichi<br>Portfolio site</h4>
     </div>
-    <nav class="navbar navbar-expand-sm">
-        <button class="navbar-toggler" type="button"
-            data-toggle="collapse" data-target="#collapse-items">
-            <span><i class="fas fa-bars fa-1x headerIcon"></i></span></button>                  
-        <div class="collapse navbar-collapse" id="collapse-items">
-            <ul class="navbar-nav container">
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Works</a>
-                </li>
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Request</a>
-                </li>
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Skill</a>
-                </li>
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Bulletin</a>
-                </li>
-                <li class="nav-item col-md-2 text-center navList">
-                    <a class="nav-link" href="#">Other</a>
-                </li>
-            </ul>
+    <div class="row m-3" id="LinkBotton">
+        <div class="col-12">
+            <div class="dropdown">
+                <button class="btn-sm dropdown-toggle"
+                    id="dropdown1" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    LINK</button>
+                <div class="dropdown-menu" aria-labelledby="dropdown1">
+                    <button class="dropdown-item" id="puldown_works">Works</button>
+                    <button class="dropdown-item" id="puldown_request">Request</button>
+                    <button class="dropdown-item" id="puldown_skill">Skill</button>
+                    <button class="dropdown-item" id="puldown_contact">Contact</button>
+                    <button class="dropdown-item" id="puldown_bulletin">Bulletin</button>
+                    <button class="dropdown-item" id="puldown_other">Other</button>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
+    <div id="navHidden">
+        <ul class="nav nav-fill">
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#works">Works</a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#request">Request</a>
+            </li>
+            <li class="nav-item text-center ">
+                <a class="nav-link" href="#skill">Skill</a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#">Bulletin</a>
+            </li>
+            <li class="nav-item text-center">
+                <a class="nav-link" href="#">Other</a>
+            </li>
+        </ul>
+    </div>
 </div>
 @endsection
 

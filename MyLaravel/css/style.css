@@ -7,6 +7,7 @@ html, body {
 #header-color {
 	background: linear-gradient(to left, royalblue, lightblue);
 	box-shadow: 2px 0 3px rgba(0,0,0,.2);
+	position: relative;
 }
 header div ul li a {
 	color: #fff;
@@ -40,6 +41,23 @@ header div ul li a {
 	padding: 2vw;
 	font-size: 25px;
 }
+#LinkBotton {
+	position: absolute;
+	display: none;
+	top: 10px;
+	left: 20px;
+}
+/* ######################### 560px以下（ナビ非表示 アイコン表示）######################### */
+@media (max-width: 560px) {
+	#navHidden {
+		display: none;
+	}
+	#LinkBotton {
+		display: inline;
+	}
+
+}
+
 /*----------------------　works　----------------------*/
 #works {
 	padding-top: 180px;
@@ -110,6 +128,9 @@ header div ul li a {
 }
 /* ######################### 519px以下（スマートフォン縦）######################### */
 @media (max-width: 519px) {
+	#works {
+		padding-top: 130px;
+	}
 	#works .works-left {
 		display: block;
 		width: 100%;
