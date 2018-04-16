@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class="container-fruid">
-    @yield('header')
+	@yield('header')
 </div>
 <div class="container">
 	@yield('contents')
