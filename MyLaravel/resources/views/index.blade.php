@@ -30,7 +30,7 @@
                 <button class="btn-sm dropdown-toggle"
                     id="dropdown1" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
-                    LINK</button>
+                    MENU</button>
                 <div class="dropdown-menu" aria-labelledby="dropdown1">
                     <button class="dropdown-item" id="puldown_works">Works</button>
                     <button class="dropdown-item" id="puldown_request">Request</button>
