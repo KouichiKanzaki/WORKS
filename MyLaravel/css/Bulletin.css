@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*----------------------　掲示板TOP　----------------------*/
+/*----------------------　掲示板　----------------------*/
 html, body {
 	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
 	background-color: white;
@@ -13,4 +13,3 @@ html, body {
 	color: #fff;
 	padding: 20px;
 }
-/*----------------------　登録　----------------------*/

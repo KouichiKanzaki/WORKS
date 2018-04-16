@@ -34,29 +34,3 @@
 	<h5 class="border-bottom">Comment</h5>
 	   <p class="p-4">{{$item->comment}}</p>
 @endsection
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

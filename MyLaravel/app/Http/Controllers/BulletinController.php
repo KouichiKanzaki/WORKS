@@ -13,11 +13,13 @@ class BulletinController extends Controller
 	   $items = DB::table('bulletins')->simplePaginate(7);
 	   return view('bulletin.index', ['items' => $items]);
 	}
+
 	// 表示
 	public function view(Request $request) {
 		$item = Bulletin::find($request->id);
 	   	return view('bulletin.view', ['item' => $item]);
 	}
+
 	// 削除
 	public function delete(Request $request) {
 		$item = Bulletin::find($request->id);
@@ -27,6 +29,7 @@ class BulletinController extends Controller
 		Bulletin::find($request->id)->delete();
 		return redirect('/bulletin');
 	}
+
 	// 新規作成
 	public function add() {
    		return view('bulletin.add');
@@ -39,6 +42,7 @@ class BulletinController extends Controller
 		$bulletin->fill($form)->save();
 		return redirect('/bulletin');
 	}
+	
 	// 更新
 	public function edit(Request $request) {
 		$item = Bulletin::find($request->id);

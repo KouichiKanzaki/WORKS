@@ -39,4 +39,3 @@
 	<input type="submit" class="btn btn-primary" value="削除する">
 </form>
 @endsection
-

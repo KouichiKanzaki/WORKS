@@ -85,7 +85,7 @@
         </tr>
         <tr>
             <th>ブラウザ</th>
-            <td>Google Chrome ,Fire fox</td>
+            <td>Google Chrome ,Firefox</td>
         </tr>
         <tr>
             <th>画面サイズ</th>
