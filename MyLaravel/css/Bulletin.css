@@ -1,0 +1,16 @@
+@charset "utf-8";
+/*----------------------　掲示板TOP　----------------------*/
+html, body {
+	font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', sans-serif;
+	background-color: white;
+}
+#header-color {
+	background: linear-gradient(to left, royalblue, lightblue);
+	box-shadow: 2px 0 3px rgba(0,0,0,.2);
+	position: relative;
+}
+.siteTitle {
+	color: #fff;
+	padding: 20px;
+}
+/*----------------------　登録　----------------------*/

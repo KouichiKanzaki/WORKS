@@ -14,6 +14,20 @@
 Route::get('/', function () {
     return view('index');
 });
-// Route::get('/', function () {
-//     return view('a');
-// });
+
+Route::get('bulletin', 'BulletinController@index');
+
+// 表示
+Route::get('bulletin/view', 'BulletinController@view');
+
+// 削除
+Route::get('bulletin/delete', 'BulletinController@delete');
+Route::post('bulletin/delete', 'BulletinController@remove');
+
+// 新規作成
+Route::get('bulletin/add', 'BulletinController@add');
+Route::post('bulletin/add', 'BulletinController@create');
+
+// 更新
+Route::get('bulletin/edit', 'BulletinController@edit');
+Route::post('bulletin/edit', 'BulletinController@update');

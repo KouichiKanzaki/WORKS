@@ -1,4 +1,4 @@
-@extends('layouts.contents')
+@extends('layouts.portfolio')
 
 <!--#################　head　#################-->
 @section('head')
@@ -36,7 +36,9 @@
                     <button class="dropdown-item" id="puldown_request">Request</button>
                     <button class="dropdown-item" id="puldown_skill">Skill</button>
                     <button class="dropdown-item" id="puldown_contact">Contact</button>
-                    <button class="dropdown-item" id="puldown_bulletin">Bulletin</button>
+                    <button class="dropdown-item" id="puldown_bulletin">
+                        <a id="BulletinLinkButton" href="./bulletin">Bulletin</a>
+                    </button>
                     <button class="dropdown-item" id="puldown_other">Other</button>
                 </div>
             </div>
@@ -57,7 +59,7 @@
                 <a class="nav-link" href="#contact">Contact</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Bulletin</a>
+                <a class="nav-link" href="./bulletin">Bulletin</a>
             </li>
             <li class="nav-item text-center">
                 <a class="nav-link" href="#">Other</a>
