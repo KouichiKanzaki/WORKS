@@ -4,18 +4,18 @@
 @section('head')
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="shortcut icon" href="../src/portfolio/K_logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="./src/portfolio/K_logo.png" type="image/x-icon">
 <title>神﨑幸逸 ポートフォリオサイト</title>
 <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-<link rel="stylesheet" href="../css/bootstrap.min.css" />
-<link rel="stylesheet" href="../css/style.css" />
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/style.css" />
 @endsection
 
 @section('javascript')
-<script src="../js/jquery.min.js"></script>
-<script src="../js/popper.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/script.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/popper.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
 @endsection
 
 <!--#################　header　#################-->
@@ -73,8 +73,8 @@
 @section('works')
 <h2 class="text-primary">Works</h2>
 <div class="works-left">
-    <a href="../../home.html" target="_blank">
-    	<img src="../src/portfolio/top_img.png" alt="TOPページ">
+    <a href="../home.html" target="_blank">
+    	<img src="./src/portfolio/top_img.png" alt="TOPページ">
     </a>
 </div>
 <div class="works-right">
@@ -98,7 +98,7 @@
         <tr>
             <th>企画書</th>
             <td>
-            	<a href="../src/portfolio/kikakusyo.pdf" target="_blank">企画書はこちら(PDF)</a>
+            	<a href="./src/portfolio/kikakusyo.pdf" target="_blank">企画書はこちら(PDF)</a>
             </td>
         </tr>
         <tr>
@@ -154,10 +154,10 @@
 @section('skill')
 <h2 class="text-primary">Skill</h2>
 <div id="skill-tool">
-    <img src="../src/portfolio/tool.png" alt="ツール">
+    <img src="./src/portfolio/tool.png" alt="ツール">
 </div>
 <div id="skill-language">
-    <img src="../src/portfolio/language.png" alt="言語">
+    <img src="./src/portfolio/language.png" alt="言語">
 </div>
 @endsection
 
@@ -167,7 +167,7 @@
 <div>
     <p>お問い合わせ・ご用件のある方は、下記までご連絡お願い致します。</p>
     <p>
-        <img src="../src/portfolio/mail_icon.jpg" alt="E-mail">
+        <img src="./src/portfolio/mail_icon.jpg" alt="E-mail">
         <a href="mailto:likfsm4@gmail.com">likfsm4@gmail.com</a>
     </p>
 </div>
