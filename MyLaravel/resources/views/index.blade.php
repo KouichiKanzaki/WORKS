@@ -36,9 +36,7 @@
                     <button class="dropdown-item" id="puldown_request">Request</button>
                     <button class="dropdown-item" id="puldown_skill">Skill</button>
                     <button class="dropdown-item" id="puldown_contact">Contact</button>
-                    <button class="dropdown-item" id="puldown_bulletin">
-                        <a id="BulletinLinkButton" href="./bulletin">Bulletin</a>
-                    </button>
+                    <button class="dropdown-item" id="puldown_bulletin" onclick="window.location.href='./bulletin'">Bulletin</button>
                     <button class="dropdown-item" id="puldown_other">Other</button>
                 </div>
             </div>
@@ -104,7 +102,8 @@
         <tr>
             <th>作品URL</th>
             <td>
-            	<a href="home.html" target="_blank">http://kouichi-kanzaki.main.jp/home.html</a>
+            	<a href="http://kanzaki-kouichi.net/home.html" 
+                target="_blank">http://kanzaki-kouichi.net/home.html</a>
             </td>
         </tr>
         <tr>
